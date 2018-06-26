@@ -9,8 +9,7 @@ const Articles = (props) =>{
 			<ul>
 				{props.articles.map( article =>
 					<li key={article.id}>
-						<Link to={`/articles/${article.id}`}>{article.id}</Link>
-						{/*<Link to="/">{article.id}</Link>*/}
+						<Link to={`/articles/${article.id}`}>{article.title}</Link>
 					</li>
 				)}
 			</ul>
